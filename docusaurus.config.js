@@ -53,13 +53,12 @@ module.exports = {
           routeBasePath: "react",
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/yuzhouu/yuzhouu/edit/master/website/",
+          editUrl: "https://github.com/yuzhouu/yuzhouu/edit/master/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/yuzhouu/yuzhouu/edit/master/website/blog/",
+          editUrl: "https://github.com/yuzhouu/yuzhouu/edit/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -75,6 +74,7 @@ module.exports = {
         path: "chart",
         routeBasePath: "chart",
         sidebarPath: require.resolve("./sidebars.js"),
+        editUrl: "https://github.com/yuzhouu/yuzhouu/edit/master/",
       },
     ],
   ],
