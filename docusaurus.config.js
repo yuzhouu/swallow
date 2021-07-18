@@ -6,7 +6,7 @@ module.exports = {
   title: "集散地",
   tagline: "没有固定主题，一些零散的东西",
   url: "https://yuzhouu.github.io",
-  baseUrl: "/",
+  baseUrl: "/yuzhouu/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
