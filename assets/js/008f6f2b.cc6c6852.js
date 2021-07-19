@@ -1,0 +1,1 @@
+(self.webpackChunkyuzhouu=self.webpackChunkyuzhouu||[]).push([[155],{7672:function(u){"use strict";u.exports=JSON.parse('{"allTagsPath":"/yuzhouu/blog/tags","slug":"lerna","name":"lerna","count":1,"permalink":"/yuzhouu/blog/tags/lerna"}')}}]);
