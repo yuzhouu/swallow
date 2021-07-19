@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://yuzhouu.github.io/yuzhouu/blog</id>
+    <id>https://yuzhouu.github.io/blog</id>
     <title>集散地 Blog</title>
     <updated>2021-02-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://yuzhouu.github.io/yuzhouu/blog"/>
+    <link rel="alternate" href="https://yuzhouu.github.io/blog"/>
     <subtitle>集散地 Blog</subtitle>
-    <icon>https://yuzhouu.github.io/yuzhouu/img/favicon.ico</icon>
+    <icon>https://yuzhouu.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Monorepo with lerna and yarn]]></title>
         <id>monorepo-with-lerna-and-yarn</id>
-        <link href="https://yuzhouu.github.io/yuzhouu/blog/monorepo-with-lerna-and-yarn"/>
+        <link href="https://yuzhouu.github.io/blog/monorepo-with-lerna-and-yarn"/>
         <updated>2021-02-14T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[直接在 lerna.json 中声明 packages: ...]，lerna bootstrap 时会为每个 repo 单独装依赖，在使用 react 时就可能遇到[invalid hook call warning错误，原因排除错误的使用了 hooks，就只有使用了多个 react 包。]]></summary>
     </entry>

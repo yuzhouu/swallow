@@ -1,0 +1,1 @@
+(self.webpackChunkyuzhouu=self.webpackChunkyuzhouu||[]).push([[187],{7789:function(o){"use strict";o.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"monorepo","name":"monorepo","count":1,"permalink":"/blog/tags/monorepo"}')}}]);

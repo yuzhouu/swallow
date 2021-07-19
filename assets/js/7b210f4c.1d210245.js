@@ -1,1 +1,0 @@
-(self.webpackChunkyuzhouu=self.webpackChunkyuzhouu||[]).push([[982],{9279:function(e){"use strict";e.exports=JSON.parse('{"permalink":"/yuzhouu/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"previousPage":null,"nextPage":null,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
