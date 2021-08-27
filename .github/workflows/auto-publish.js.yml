@@ -9,10 +9,6 @@ on:
   pull_request:
     branches: [ master ]
 
-defaults:
-  run:
-    working-directory: site
-
 jobs:
   build:
 
@@ -30,6 +26,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+        cache-dependency-path: site/yarn.lock
+    - run: cd site
     - run: yarn install
     - run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
