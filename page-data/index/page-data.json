@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-index-js",
+    "path": "/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Ordinary Days"}},"allMarkdownRemark":{"nodes":[{"excerpt":"直接在 lerna.json 中声明 packages: […]，lerna bootstrap 时会为每个 repo 单独装依赖，在使用 react 时就可能遇到invalid hook call warning错误，原因排除错误的使用了 hooks…","fields":{"slug":"/2021-02-14-monorepo-with-lerna-and-yarn/"},"frontmatter":{"date":null,"title":"Monorepo with lerna and yarn","description":null}}]}},"pageContext":{}},
+    "staticQueryHashes": ["2841359383","3274528899"]}

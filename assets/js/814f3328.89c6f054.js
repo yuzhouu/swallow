@@ -1,1 +1,0 @@
-(self.webpackChunkyuzhouu=self.webpackChunkyuzhouu||[]).push([[535],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Monorepo with lerna and yarn","permalink":"/blog/monorepo-with-lerna-and-yarn"}]}')}}]);

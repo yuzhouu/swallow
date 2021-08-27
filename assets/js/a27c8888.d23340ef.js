@@ -1,1 +1,0 @@
-(self.webpackChunkyuzhouu=self.webpackChunkyuzhouu||[]).push([[185],{3150:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"yarn","name":"yarn","count":1,"permalink":"/blog/tags/yarn"}')}}]);

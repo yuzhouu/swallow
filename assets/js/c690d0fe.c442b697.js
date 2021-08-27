@@ -1,1 +1,0 @@
-(self.webpackChunkyuzhouu=self.webpackChunkyuzhouu||[]).push([[274],{3110:function(e){"use strict";e.exports=JSON.parse('{"pluginId":"chart","version":"current","label":"Next","banner":"none","isLast":true,"docsSidebars":{"tutorialSidebar":[{"type":"link","label":"Chart","href":"/chart/"}]},"permalinkToSidebar":{"/chart/":"tutorialSidebar"}}')}}]);
