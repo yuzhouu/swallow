@@ -1,11 +1,7 @@
 ---
-slug: monorepo-with-lerna-and-yarn
 title: Monorepo with lerna and yarn
-author: Yuzhouu
-author_title: 新东方优秀毕业生
-author_url: https://github.com/yuzhouu
-author_image_url: https://avatars.githubusercontent.com/u/7315454?v=4
 tags: [monorepo, lerna, yarn]
+date: 2021-02-14
 ---
 
 直接在 lerna.json 中声明 packages: [...]，lerna bootstrap 时会为每个 repo 单独装依赖，在使用 react 时就可能遇到[invalid hook call warning](https://reactjs.org/warnings/invalid-hook-call-warning.html)错误，原因排除错误的使用了 hooks，就只有使用了多个 react 包。

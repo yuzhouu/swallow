@@ -55,7 +55,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #25c19f;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -119,7 +119,7 @@ h6 {
 }
 
 h1 {
-  font-weight: var(--fontWeight-black);
+  font-weight: var(--fontWeight-bold);
   font-size: var(--fontSize-6);
   color: var(--color-heading-black);
 }
@@ -307,9 +307,9 @@ a:focus {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
 
-.blog-post header p {
-  font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
+.blog-post header .bio {
+  margin-top: var(--spacing-4);
+  margin-bottom: var(--spacing-6);
 }
 
 .blog-post-nav ul {

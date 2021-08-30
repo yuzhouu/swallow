@@ -1,8 +1,7 @@
 ---
-slug: create-portal
 title: create portal
-author: Yuzhouu
-tags: [react source code]
+tags: [react source, code]
+date: 2021-08-30
 ---
 
 ## how to create portal?
