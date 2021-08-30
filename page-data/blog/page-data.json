@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-pages-blog-index-tsx",
+    "path": "/blog/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Ordinary Days"}},"allMdx":{"nodes":[{"excerpt":"how to create portal? how to create fiber from portal object?","slug":"react-source/create-portal","frontmatter":{"date":"August 30, 2021","title":"create portal"}},{"excerpt":"直接在 lerna.json 中声明 packages:  ... ，lerna bootstrap 时会为每个 repo 单独装依赖，在使用 react 时就可能遇到 invalid hook call warning 错误，原因排除错误的使用了 hooks…","slug":"monorepo-with-lerna-and-yarn","frontmatter":{"date":"February 14, 2021","title":"Monorepo with lerna and yarn"}}]}},"pageContext":{}},
+    "staticQueryHashes": ["1323518467","3000541721","3159585216","4217986984"]}

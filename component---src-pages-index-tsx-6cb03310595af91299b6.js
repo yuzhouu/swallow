@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkordinary_days=self.webpackChunkordinary_days||[]).push([[691],{2494:function(n,u,r){r.r(u);r(7294);var a=r(1796),t=r(3431);u.default=function(){return(0,t.tZ)("div",null,(0,t.tZ)(a.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-6cb03310595af91299b6.js.map
