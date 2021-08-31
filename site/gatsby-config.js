@@ -122,7 +122,7 @@ try {
     plugins.push({
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: content,
+        trackingId: content.trim(),
       },
     });
   }
