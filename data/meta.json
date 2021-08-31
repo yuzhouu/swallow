@@ -2,11 +2,22 @@
   "site": {
     "title": "Ordinary Days",
     "siteUrl": "https://yuzhou.github.io/",
-    "description": "read the source code and note then practice"
+    "description": "read the source code and note then practice",
+    "gitRepo": "https://github.com/yuzhouu/yuzhouu.github.io"
   },
   "author": {
     "name": "YuZhou",
-    "bio": "who lives in ordinary days",
-    "link": "https://github.com/yuzhouu"
+    "bio": "细雨鱼儿出，微风燕子斜z",
+    "link": "https://github.com/yuzhouu",
+    "socialLinks": [
+      {
+        "name": "Github",
+        "link": "https://github.com/yuzhouu"
+      },
+      {
+        "name": "Blog",
+        "link": "/blog"
+      }
+    ]
   }
 }
