@@ -91,6 +91,9 @@ const Footer = () => {
               </li>
             );
           })}
+          <li>
+            <Link to="/rss.xml">Rss</Link>
+          </li>
         </ul>
       </div>
       <div className="footer-col" style={{ gridColumn: '2/3' }}>

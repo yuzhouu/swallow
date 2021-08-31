@@ -4,10 +4,14 @@
 
 ## USAGES
 
-the article, config or other asset should be placed under data/ folder, the site place the role of generator.
+the article, config or other asset should be placed under `data/` folder, and the `site` place the role of generator.
+
+## Google Analytics
+
+write your track id to `/data/google-tracking-id`, the google analytics will automatically start.
 
 ## LICENSE
 
-the thing under **site/** folder is under MIT license, you can find LICENSE under the folder
+the things under `site/` folder is under MIT license, you can find LICENSE in that folder
 
-the author reserve all the right of the thing under **data/** folder, **any form of reprinting without permission is not allowed**
+the author reserve all the right of the thing under `data/` folder, **any form of reprinting without permission is not allowed**
