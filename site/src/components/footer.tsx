@@ -7,6 +7,10 @@ const StyledFooter = styled.footer`
   color: #fff;
   display: grid;
 
+  @media (max-width: 56rem) {
+    padding: var(--spacing-6) var(--spacing-5);
+  }
+
   .site-title {
     grid-column: 1/3;
 

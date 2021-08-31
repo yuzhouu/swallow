@@ -1,11 +1,12 @@
 import React from 'react';
-import HeaderNav from '../components/header-nav';
+import Layout from '../components/post-layout';
+import Seo from '../components/seo';
 
 const Home = () => {
   return (
-    <div>
-      <HeaderNav></HeaderNav>
-    </div>
+    <Layout>
+      <Seo title="Home" />
+    </Layout>
   );
 };
 
