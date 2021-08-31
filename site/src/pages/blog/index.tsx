@@ -2,25 +2,24 @@ import * as React from 'react';
 import { Link, graphql } from 'gatsby';
 
 import Bio from '../../components/bio';
-import Layout from '../../components/layout';
+import PostLayout from '../../components/post-layout';
 import Seo from '../../components/seo';
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title || `Title`;
+const BlogIndex = ({ data }) => {
   const posts = data.allMdx.nodes;
 
   if (posts.length === 0) {
     return (
-      <Layout location={location} title={siteTitle}>
+      <PostLayout>
         <Seo title="All posts" />
         <Bio />
         <p>No blog posts found. Add markdown posts to "data/blog".</p>
-      </Layout>
+      </PostLayout>
     );
   }
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <PostLayout>
       <Seo title="All posts" />
       <Bio />
       <ol style={{ listStyle: `none` }}>
@@ -51,7 +50,7 @@ const BlogIndex = ({ data, location }) => {
           );
         })}
       </ol>
-    </Layout>
+    </PostLayout>
   );
 };
 
@@ -59,11 +58,6 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       nodes {
         excerpt

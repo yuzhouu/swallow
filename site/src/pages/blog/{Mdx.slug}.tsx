@@ -3,15 +3,14 @@ import { Link, graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import Bio from '../../components/bio';
-import Layout from '../../components/layout';
+import PostLayout from '../../components/post-layout';
 import Seo from '../../components/seo';
 
-const BlogPostTemplate = ({ data, location }) => {
+const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
-  const siteTitle = data.site.siteMetadata.title || `Title`;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <PostLayout>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
       <article className="blog-post" itemScope itemType="http://schema.org/Article">
         <header>
@@ -49,7 +48,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </li>
         </ul>
       </nav> */}
-    </Layout>
+    </PostLayout>
   );
 };
 
@@ -57,12 +56,6 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($id: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-
     mdx(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)

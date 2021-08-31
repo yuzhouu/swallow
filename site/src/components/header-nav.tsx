@@ -2,19 +2,19 @@ import styled from '@emotion/styled';
 import { useStaticQuery, graphql } from 'gatsby';
 import Link from './link';
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 60px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
+  padding: 0 var(--spacing-5);
 `;
 
 const Brand = styled(Link)`
   align-items: center;
   display: flex;
-  font-weight: 700;
+  font-weight: var(--fontWeight-black);
   height: 2rem;
   margin-right: 1rem;
   min-width: 0;
@@ -63,10 +63,9 @@ const HeaderNav = () => {
   return (
     <Wrapper>
       <NavItems>
-        <Brand to="/">
-          <b>{site.siteMetadata.title}</b>
-        </Brand>
+        <Brand to="/">{site.siteMetadata.title}</Brand>
         <NavLink to="/blog">Blog</NavLink>
+        <NavLink to="/about">About me</NavLink>
       </NavItems>
     </Wrapper>
   );
