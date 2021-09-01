@@ -5,6 +5,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Bio from '../../components/bio';
 import PostLayout from '../../components/post-layout';
 import Seo from '../../components/seo';
+import PostNav from '../../components/post/blog-post-nav';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
@@ -22,32 +23,7 @@ const BlogPostTemplate = ({ data }) => {
         <hr />
         <footer></footer>
       </article>
-      {/* <nav className="blog-post-nav">
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav> */}
+      <PostNav postNav={post.postNav} />
     </PostLayout>
   );
 };
@@ -63,6 +39,20 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+      }
+      postNav {
+        newer {
+          slug
+          frontmatter {
+            title
+          }
+        }
+        older {
+          slug
+          frontmatter {
+            title
+          }
+        }
       }
     }
   }

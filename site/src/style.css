@@ -63,6 +63,7 @@
   --color-heading-black: black;
   --color-accent: #d1dce5;
   --color-footer-bg: #0f1119;
+  --color-border: rgba(0, 0, 0, 0.1);
 }
 
 /* HTML elements */
@@ -238,7 +239,7 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* Custom classes */
@@ -303,10 +304,6 @@ a:focus {
 .blog-post header .bio {
   margin-top: var(--spacing-4);
   margin-bottom: var(--spacing-6);
-}
-
-.blog-post-nav ul {
-  margin: var(--spacing-0);
 }
 
 .gatsby-highlight {
