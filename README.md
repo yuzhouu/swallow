@@ -8,7 +8,7 @@ the article, config or other asset should be placed under `data/` folder, and th
 
 the goal of this project is help people who is not familiar with frontend deploy fantasy blog.
 
-#### the things you don't need know to use this project
+#### the things you don't need
 - know any things about gatsby, node, typescript
 - install node dependencies
 
