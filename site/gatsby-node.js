@@ -33,8 +33,16 @@
 
 // exports.sourceNodes = sourceNodes;
 
-const createSchemaCustomization = ({ actions }) => {
+const createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
+
+  const TagType = schema.buildObjectType({
+    name: 'Tag',
+    fields: {
+      name: { type: `String!` },
+    },
+    interfaces: [`Node`],
+  });
 
   const typeDefs = `
     type PostNav {
@@ -42,12 +50,12 @@ const createSchemaCustomization = ({ actions }) => {
       older: Mdx
     }
   `;
-  createTypes(typeDefs);
+  createTypes([typeDefs, TagType]);
 };
 
 exports.createSchemaCustomization = createSchemaCustomization;
 
-const createResolvers = ({ createResolvers }) => {
+const createResolvers = ({ createResolvers, createNode }) => {
   const resolvers = {
     Mdx: {
       postNav: {
@@ -69,6 +77,28 @@ const createResolvers = ({ createResolvers }) => {
             newer: postList[index - 1] || null,
             older: postList[index + 1] || null,
           };
+        },
+      },
+    },
+
+    Query: {
+      allTag: {
+        type: `TagConnection!`,
+        resolve: (source, args, context, info) => {
+          const tagSet = new Set();
+          const postList = context.nodeModel.getAllNodes({ type: `Mdx` });
+          postList.forEach(post => {
+            post.frontmatter.tags.forEach(tag => {
+              tagSet.add(tag);
+            });
+          });
+          const nodes = Array.from(tagSet).map(tag => {
+            return {
+              name: tag,
+              id: tag,
+            };
+          });
+          return { nodes };
         },
       },
     },

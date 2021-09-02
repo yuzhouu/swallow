@@ -41,9 +41,9 @@ const Bio = () => {
       />
       {author?.name && (
         <div>
-          <Link to={author.link} target="_blank">
+          <a href={author.link} target="_blank">
             <strong>{author.name}</strong>
-          </Link>
+          </a>
           <p>{author?.bio || null}</p>
         </div>
       )}

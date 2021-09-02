@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
-import HeaderNav from './header-nav';
-import Footer from './footer';
+import HeaderNav from '../header-nav';
+import Footer from '../footer';
 
 const GlobalWrapper = styled.div`
   display: grid;

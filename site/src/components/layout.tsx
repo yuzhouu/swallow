@@ -1,6 +1,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
 import HeaderNav from './header-nav';
+import Footer from './footer';
 
 const GlobalWrapper = styled.div`
   display: grid;
@@ -14,6 +15,7 @@ const Layout = ({ children }) => {
     <GlobalWrapper className="global-wrapper">
       <HeaderNav />
       <main>{children}</main>
+      <Footer />
     </GlobalWrapper>
   );
 };

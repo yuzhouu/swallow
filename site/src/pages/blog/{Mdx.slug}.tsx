@@ -1,11 +1,12 @@
 import * as React from 'react';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 
 import Bio from '../../components/bio';
-import PostLayout from '../../components/post-layout';
+import PostLayout from '../../components/post/post-layout';
 import Seo from '../../components/seo';
 import PostNav from '../../components/post/blog-post-nav';
+import PostTags from '../../components/post/post-tags';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
@@ -21,7 +22,9 @@ const BlogPostTemplate = ({ data }) => {
         </header>
         <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
         <hr />
-        <footer></footer>
+        <footer>
+          <PostTags tags={post.frontmatter.tags} />
+        </footer>
       </article>
       <PostNav postNav={post.postNav} />
     </PostLayout>
@@ -39,6 +42,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
       postNav {
         newer {

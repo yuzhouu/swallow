@@ -181,12 +181,6 @@ ol {
   list-style-image: none;
 }
 
-ul li,
-ol li {
-  padding-left: var(--spacing-0);
-  margin-bottom: calc(var(--spacing-8) / 2);
-}
-
 li > p {
   margin-bottom: calc(var(--spacing-8) / 2);
 }
@@ -321,4 +315,10 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }

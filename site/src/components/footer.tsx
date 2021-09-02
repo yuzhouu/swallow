@@ -91,7 +91,7 @@ const Footer = () => {
           {site.siteMetadata.author.socialLinks.map(item => {
             return (
               <li key={item.name}>
-                <Link to={item.link}>{item.name}</Link>
+                <a href={item.link}>{item.name}</a>
               </li>
             );
           })}
@@ -104,13 +104,13 @@ const Footer = () => {
         <div className="footer-title">Contribute</div>
         <ul>
           <li>
-            <Link to={site.siteMetadata.gitRepo}>Github Repo</Link>
+            <a href={site.siteMetadata.gitRepo}>Github Repo</a>
           </li>
         </ul>
       </div>
       <div className="copyright">
         © {new Date().getFullYear()} ♥︎{' '}
-        <Link to={site.siteMetadata.author.link}>{site.siteMetadata.author.name}</Link>
+        <a href={site.siteMetadata.author.link}>{site.siteMetadata.author.name}</a>
       </div>
     </StyledFooter>
   );

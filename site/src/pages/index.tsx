@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/post-layout';
+import Layout from '../components/layout';
 import Seo from '../components/seo';
 
 const Home = () => {

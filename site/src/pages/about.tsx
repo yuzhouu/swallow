@@ -1,4 +1,4 @@
-import { graphql, PageProps, Link } from 'gatsby';
+import { graphql, PageProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from '@emotion/styled';
 import Layout from '../components/layout';
@@ -82,9 +82,9 @@ const About = ({
           alt="Profile picture"
         />
         <p>
-          <Link to={author.link} target="_blank">
+          <a href={author.link} target="_blank">
             <strong>{author.name}</strong>
-          </Link>
+          </a>
         </p>
         <p>{author.bio}</p>
 
@@ -96,7 +96,7 @@ const About = ({
               {author.socialLinks.map(item => {
                 return (
                   <li key={item.name}>
-                    <Link to={item.link}>{item.name}</Link>
+                    <a href={item.link}>{item.name}</a>
                   </li>
                 );
               })}
