@@ -16,17 +16,27 @@ const TagList = styled.ul`
 
   li {
     list-style: none;
+    position: relative;
 
     & + li {
       margin-left: var(--spacing-2);
+
+      &::before {
+        content: '';
+        width: 1px;
+        height: 10px;
+        background: var(--color-border);
+        display: inline-block;
+        position: absolute;
+        top: 9px;
+        left: -4px;
+      }
     }
 
     a {
       display: inline-block;
       padding: var(--spacing-0) var(--spacing-2);
       text-decoration: none;
-      border: 1px solid var(--color-border);
-      border-radius: 3px;
     }
   }
 `;
@@ -34,15 +44,19 @@ const TagList = styled.ul`
 const PostTags = ({ tags }: Props) => {
   return (
     <div className="d-flex">
-      Tag: &nbsp;
+      Tags: &nbsp;
       <TagList>
-        {tags.map(tag => {
-          return (
-            <li key={tag}>
-              <Link to={`/blog/tags/${slugify(tag)}`}>{tag}</Link>
-            </li>
-          );
-        })}
+        {tags
+          .sort((a, b) => {
+            return a.localeCompare(b);
+          })
+          .map(tag => {
+            return (
+              <li key={tag}>
+                <Link to={`/blog/tags/${slugify(tag)}`}>{tag}</Link>
+              </li>
+            );
+          })}
       </TagList>
     </div>
   );
