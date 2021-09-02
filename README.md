@@ -6,6 +6,18 @@
 
 the article, config or other asset should be placed under `data/` folder, and the `site` place the role of generator.
 
+the goal of this project is help people who is not familiar with frontend deploy fantasy blog.
+
+#### the things you don't need
+- know any things about gatsby, node, typescript
+- install node dependencies
+
+#### the things you do
+- wirte markdown under the `/data` folder
+- push to github
+
+after you push to github, project will **automatically build and deploy** to xxx.github.io.
+
 ## Google Analytics
 
 write your track id to `/data/google-tracking-id`, the google analytics will automatically start.
