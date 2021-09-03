@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import { memo } from 'react';
-import slugify from '@sindresorhus/slugify';
+import slugify from 'slugify';
 
 interface Props {
   tags: string[];

@@ -9,21 +9,32 @@ import Seo from '../../components/seo';
 import PostNav from '../../components/post/blog-post-nav';
 import PostTags from '../../components/post/post-tags';
 import TOC from '../../components/post/toc';
+import { MDXProvider } from '../../components/mdx/mdx-provider';
 
 const Wrapper = styled.div`
   margin: var(--spacing-0) auto;
   padding: var(--spacing-10) var(--spacing-5);
   display: flex;
+  justify-content: center;
+
+  article {
+    /** override implicit min-width */
+    min-width: 0;
+  }
 
   .blog-post {
     max-width: var(--maxWidth-post);
+  }
+
+  .toc-container {
+    @media (max-width: 48rem) {
+      display: none;
+    }
   }
 `;
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
-
-  console.log(post.tableOfContents);
 
   return (
     <Layout>
@@ -35,7 +46,9 @@ const BlogPostTemplate = ({ data }) => {
             <div>{post.frontmatter.date}</div>
             <Bio />
           </header>
-          <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
+          <MDXProvider>
+            <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
+          </MDXProvider>
           <hr />
           <footer>
             <PostTags tags={post.frontmatter.tags} />
@@ -43,7 +56,9 @@ const BlogPostTemplate = ({ data }) => {
 
           <PostNav postNav={post.postNav} />
         </article>
-        <TOC toc={post.tableOfContents.items} />
+        <div className="toc-container">
+          <TOC toc={post.tableOfContents.items} />
+        </div>
       </Wrapper>
     </Layout>
   );
