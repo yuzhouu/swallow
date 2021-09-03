@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 
 import Bio from '../../../components/bio';
-import PostLayout from '../../../components/post/post-layout';
+import Layout from '../../../components/layout';
 import Seo from '../../../components/seo';
 import PostList from '../../../components/post/post-list';
 
@@ -12,16 +12,16 @@ const BlogIndex = ({ data, params }: PageProps & { data: any }) => {
 
   if (posts.length === 0) {
     return (
-      <PostLayout>
+      <Layout full={false}>
         <Seo title={`Posts tagged with ${curTag}`} />
         <Bio />
         <p>No blog posts tagged with {curTag} found. Add tag to post's tags frontmatter.</p>
-      </PostLayout>
+      </Layout>
     );
   }
 
   return (
-    <PostLayout>
+    <Layout full={false}>
       <Seo title={`Posts tagged with ${curTag}`} />
       <Bio />
       <section>
@@ -32,7 +32,7 @@ const BlogIndex = ({ data, params }: PageProps & { data: any }) => {
       </section>
 
       <PostList posts={posts} />
-    </PostLayout>
+    </Layout>
   );
 };
 

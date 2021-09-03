@@ -2,7 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 
 import Bio from '../../components/bio';
-import PostLayout from '../../components/post/post-layout';
+import Layout from '../../components/layout';
 import Seo from '../../components/seo';
 import PostList from '../../components/post/post-list';
 
@@ -11,20 +11,20 @@ const BlogIndex = ({ data }) => {
 
   if (posts.length === 0) {
     return (
-      <PostLayout>
+      <Layout full={false}>
         <Seo title="All posts" />
         <Bio />
         <p>No blog posts found. Add markdown posts to "data/blog".</p>
-      </PostLayout>
+      </Layout>
     );
   }
 
   return (
-    <PostLayout>
+    <Layout full={false}>
       <Seo title="All posts" />
       <Bio />
       <PostList posts={posts} />
-    </PostLayout>
+    </Layout>
   );
 };
 
