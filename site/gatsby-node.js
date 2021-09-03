@@ -88,7 +88,7 @@ const createResolvers = ({ createResolvers, createNode }) => {
           const tagSet = new Set();
           const postList = context.nodeModel.getAllNodes({ type: `Mdx` });
           postList.forEach(post => {
-            post.frontmatter.tags.forEach(tag => {
+            (post.frontmatter.tags || []).forEach(tag => {
               tagSet.add(tag);
             });
           });

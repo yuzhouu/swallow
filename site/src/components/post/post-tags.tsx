@@ -42,6 +42,9 @@ const TagList = styled.ul`
 `;
 
 const PostTags = ({ tags }: Props) => {
+  if (!tags || tags.length === 0) {
+    return null;
+  }
   return (
     <div className="d-flex">
       Tags: &nbsp;
