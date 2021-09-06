@@ -92,6 +92,7 @@ const plugins = [
             }
           `,
           output: '/rss.xml',
+          match: '^/blog/?$',
         },
       ],
     },
