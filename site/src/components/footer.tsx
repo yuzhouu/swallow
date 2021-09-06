@@ -96,7 +96,7 @@ const Footer = () => {
             );
           })}
           <li>
-            <Link to="/rss.xml">Rss</Link>
+            <a href="/rss.xml">Rss</a>
           </li>
         </ul>
       </div>
