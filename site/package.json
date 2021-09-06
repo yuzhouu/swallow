@@ -35,6 +35,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "@types/react-helmet": "^6.1.2",
     "gh-pages": "^3.2.3",
     "prettier": "2.3.2"
   },
