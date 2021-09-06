@@ -10,6 +10,7 @@ import PostNav from '../../components/post/blog-post-nav';
 import PostTags from '../../components/post/post-tags';
 import TOC from '../../components/post/toc';
 import { MDXProvider } from '../../components/mdx/mdx-provider';
+import PostComment from '../../components/post/post-comment';
 
 const Wrapper = styled.div`
   margin: var(--spacing-0) auto;
@@ -63,17 +64,7 @@ const BlogPostTemplate = ({ data }) => {
           <TOC toc={post.tableOfContents.items} />
         </div>
       </Wrapper>
-      <div>
-        <script
-          src="https://utteranc.es/client.js"
-          repo="yuzhouu/yuzhouu.github.io"
-          issue-term="pathname"
-          label="comment"
-          theme="github-light"
-          crossOrigin="anonymous"
-          async
-        ></script>
-      </div>
+      <PostComment repo="yuzhouu/yuzhouu.github.io" />
     </Layout>
   );
 };
