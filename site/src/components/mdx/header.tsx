@@ -2,7 +2,6 @@ import { memo } from 'react';
 import slugify from 'slugify';
 
 export const H2 = memo(props => {
-  console.log(slugify('其他'));
   return (
     <h2
       className="anchor anchor__h2"
