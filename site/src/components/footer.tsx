@@ -7,7 +7,7 @@ const StyledFooter = styled.footer`
   color: #fff;
   display: grid;
 
-  @media (max-width: 56rem) {
+  @media (max-width: 66.8rem) {
     padding: var(--spacing-6) var(--spacing-5);
   }
 

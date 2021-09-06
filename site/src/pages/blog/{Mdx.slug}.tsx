@@ -30,6 +30,9 @@ const Wrapper = styled.div`
     @media (max-width: 48rem) {
       display: none;
     }
+    @media (min-width: 70.5rem) {
+      width: 1px;
+    }
   }
 `;
 
