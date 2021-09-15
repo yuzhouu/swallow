@@ -56,7 +56,9 @@ const PostTags = ({ tags }: Props) => {
           .map(tag => {
             return (
               <li key={tag}>
-                <Link to={`/blog/tags/${slugify(tag)}`}>{tag}</Link>
+                <Link to={`/blog/tags/${slugify(tag, { remove: /[.\\]+/g, lower: true })}`}>
+                  {tag}
+                </Link>
               </li>
             );
           })}

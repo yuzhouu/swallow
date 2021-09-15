@@ -6,7 +6,7 @@ export const H2 = memo(props => {
     <h2
       className="anchor anchor__h2"
       {...props}
-      id={slugify(props.children as string) || (props.children as string)}
+      id={slugify(props.children as string, { remove: /[.\\]+/g, lower: true })}
     />
   );
 });
@@ -16,7 +16,7 @@ export const H3 = memo(props => {
     <h3
       className="anchor anchor__h3"
       {...props}
-      id={slugify(props.children as string) || (props.children as string)}
+      id={slugify(props.children as string, { remove: /[.\\]+/g, lower: true })}
     />
   );
 });
@@ -26,7 +26,7 @@ export const H4 = memo(props => {
     <h4
       className="anchor anchor__h4"
       {...props}
-      id={slugify(props.children as string) || (props.children as string)}
+      id={slugify(props.children as string, { remove: /[.\\]+/g, lower: true })}
     />
   );
 });
