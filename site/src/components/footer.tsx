@@ -104,7 +104,7 @@ const Footer = () => {
         <div className="footer-title">Contribute</div>
         <ul>
           <li>
-            <a href={site.siteMetadata.gitRepo}>Github Repo</a>
+            <a href={`https://github.com/${site.siteMetadata.gitRepo}`}>Github Repo</a>
           </li>
         </ul>
       </div>

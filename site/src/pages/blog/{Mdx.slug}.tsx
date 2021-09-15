@@ -64,7 +64,7 @@ const BlogPostTemplate = ({ data }) => {
           <TOC toc={post.tableOfContents.items} />
         </div>
       </Wrapper>
-      <PostComment repo="yuzhouu/yuzhouu.github.io" />
+      <PostComment repo={data.site.siteMetadata.gitRepo} />
     </Layout>
   );
 };
@@ -97,6 +97,12 @@ export const pageQuery = graphql`
         }
       }
       tableOfContents
+    }
+
+    site {
+      siteMetadata {
+        gitRepo
+      }
     }
   }
 `;
