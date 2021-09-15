@@ -28,6 +28,8 @@ const StyledFooter = styled.footer`
     grid-column: 1/3;
     padding: var(--spacing-2) var(--spacing-0);
     border-top: 1px solid #fff;
+    display: flex;
+    align-items: center;
   }
 
   .footer-title {
@@ -55,6 +57,22 @@ const StyledFooter = styled.footer`
         }
       }
     }
+  }
+`;
+
+const PowerBy = styled.div`
+  margin-left: 24px;
+  position: relative;
+  font-size: 14px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 13px;
+    background: rgba(255 255 255 / 88%);
+    border-radius: 1px;
+    left: -11px;
+    top: 4px;
   }
 `;
 
@@ -109,8 +127,13 @@ const Footer = () => {
         </ul>
       </div>
       <div className="copyright">
-        © {new Date().getFullYear()} ♥︎{' '}
-        <a href={site.siteMetadata.author.link}>{site.siteMetadata.author.name}</a>
+        <span>
+          © {new Date().getFullYear()} ♥︎{' '}
+          <a href={site.siteMetadata.author.link}>{site.siteMetadata.author.name}</a>
+        </span>
+        <PowerBy className="powered-by">
+          Powered by <a href="https://github.com/yuzhouu/ordinary-days">Ordinary Days</a>
+        </PowerBy>
       </div>
     </StyledFooter>
   );
