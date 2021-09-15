@@ -19,5 +19,6 @@
         "link": "/blog"
       }
     ]
-  }
+  },
+  "pathPrefix": "ordinary-days"
 }

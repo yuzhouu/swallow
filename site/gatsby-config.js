@@ -138,5 +138,6 @@ module.exports = {
     ...meta.site,
     author: meta.author,
   },
+  pathPrefix: meta.pathPrefix || '',
   plugins,
 };
