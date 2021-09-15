@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-about-tsx",
     "path": "/about/",
     "result": {"data":{"site":{"siteMetadata":{"author":{"name":"YuZhou","bio":"细雨鱼儿出，微风燕子斜","link":"https://github.com/yuzhouu","socialLinks":[{"name":"Github","link":"https://github.com/yuzhouu"},{"name":"Blog","link":"/blog"}]}}}},"pageContext":{}},
-    "staticQueryHashes": ["3159585216","92709925"]}
+    "staticQueryHashes": ["1484465211","3159585216"]}

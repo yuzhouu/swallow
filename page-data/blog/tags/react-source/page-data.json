@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-blog-tags-tag-name-tsx",
     "path": "/blog/tags/react-source/",
     "result": {"data":{"allMdx":{"nodes":[{"excerpt":"how to create portal? how to create fiber from portal object?","slug":"react-source/create-portal","frontmatter":{"date":"August 30, 2021","title":"create portal","tags":["react source","code"]}}]}},"pageContext":{"id":"react source","name":"react source","__params":{"name":"react-source"}}},
-    "staticQueryHashes": ["3000541721","3159585216","4217986984","92709925"]}
+    "staticQueryHashes": ["1484465211","2285153661","3000541721","3159585216"]}
