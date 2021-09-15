@@ -64,7 +64,7 @@ const BlogPostTemplate = ({ data }) => {
           <TOC toc={post.tableOfContents.items} />
         </div>
       </Wrapper>
-      <PostComment repo={data.site.siteMetadata.gitRepo} />
+      <PostComment repo={data.site.siteMetadata.githubRepo} />
     </Layout>
   );
 };
@@ -101,7 +101,7 @@ export const pageQuery = graphql`
 
     site {
       siteMetadata {
-        gitRepo
+        githubRepo
       }
     }
   }

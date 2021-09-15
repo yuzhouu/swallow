@@ -83,7 +83,7 @@ const Footer = () => {
         site {
           siteMetadata {
             title
-            gitRepo
+            githubRepo
             author {
               name
               link
@@ -122,7 +122,7 @@ const Footer = () => {
         <div className="footer-title">Contribute</div>
         <ul>
           <li>
-            <a href={`https://github.com/${site.siteMetadata.gitRepo}`}>Github Repo</a>
+            <a href={`https://github.com/${site.siteMetadata.githubRepo}`}>Github Repo</a>
           </li>
         </ul>
       </div>
