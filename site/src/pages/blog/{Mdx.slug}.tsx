@@ -4,7 +4,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import styled from '@emotion/styled';
 
 import Bio from '../../components/bio';
-import Layout from '../../components/layout';
+import PostLayout from '../../components/post/post-layout';
 import Seo from '../../components/seo';
 import PostNav from '../../components/post/blog-post-nav';
 import PostTags from '../../components/post/post-tags';
@@ -41,7 +41,7 @@ const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
 
   return (
-    <Layout>
+    <PostLayout>
       <Seo title={post.frontmatter.title} description={post.excerpt} />
       <Wrapper>
         <article className="blog-post" itemScope itemType="http://schema.org/Article">
@@ -65,7 +65,7 @@ const BlogPostTemplate = ({ data }) => {
         </div>
       </Wrapper>
       <PostComment repo={data.site.siteMetadata.githubRepo} />
-    </Layout>
+    </PostLayout>
   );
 };
 

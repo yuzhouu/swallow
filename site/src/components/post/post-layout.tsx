@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from '@emotion/styled';
-import HeaderNav from './header-nav';
-import Footer from './footer';
+import HeaderNav from '../header-nav';
+import Footer from '../footer';
 
 const GlobalWrapper = styled.div`
   display: grid;
@@ -9,20 +9,22 @@ const GlobalWrapper = styled.div`
   min-height: 100vh;
   max-width: var(--maxWidth-wrapper);
 
-  .main-wrapper {
-    padding: var(--spacing-0) var(--spacing-16);
+  .post-main {
+    max-width: var(--maxWidth-post);
+    padding: var(--spacing-10) var(--spacing-5);
+    margin: var(--spacing-0) auto;
 
-    @media (max-width: 66.8rem) {
-      padding: var(--spacing-0) var(--spacing-5);
+    @media (min-width: 48rem) {
+      min-width: var(--maxWidth-post);
     }
   }
 `;
 
-const Layout = ({ children, full = true }) => {
+const Layout = ({ children }) => {
   return (
     <GlobalWrapper className="global-wrapper">
       <HeaderNav />
-      <main className="main-wrapper">{children}</main>
+      <main className="post-main">{children}</main>
       <Footer />
     </GlobalWrapper>
   );

@@ -24,6 +24,11 @@ const Brand = styled(Link)`
   min-width: 0;
   text-decoration: none;
   color: var(--color-heading);
+  letter-spacing: -0.02em;
+
+  &:hover {
+    text-decoration: none;
+  }
 `;
 
 const _NavLink = styled(Link)`
@@ -34,6 +39,12 @@ const _NavLink = styled(Link)`
   min-width: 0;
   text-decoration: none;
   color: var(--color-heading);
+  font-weight: var(--fontWeight-medium);
+
+  &:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+  }
 
   &.active {
     color: var(--color-primary);

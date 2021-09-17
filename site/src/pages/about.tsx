@@ -2,6 +2,7 @@ import { graphql, PageProps } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import styled from '@emotion/styled';
 import Layout from '../components/layout';
+import Seo from '../components/seo';
 
 const Bio = styled.div`
   text-align: center;
@@ -70,6 +71,7 @@ const About = ({
 
   return (
     <Layout>
+      <Seo title="About me" />
       <Bio>
         <StaticImage
           className="bio-avatar"

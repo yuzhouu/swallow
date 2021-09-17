@@ -7,8 +7,10 @@ const StyledFooter = styled.footer`
   color: #fff;
   display: grid;
 
+  padding: var(--spacing-6) var(--spacing-16) var(--spacing-3);
+
   @media (max-width: 66.8rem) {
-    padding: var(--spacing-6) var(--spacing-5);
+    padding: var(--spacing-6) var(--spacing-5) var(--spacing-3);
   }
 
   .site-title {
