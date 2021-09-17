@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkordinary_days=self.webpackChunkordinary_days||[]).push([[691],{2494:function(n,t,e){e.r(t);e(7294);var r=e(188),u=e(1069),a=e(3431);t.default=function(){return(0,a.tZ)(r.Z,null,(0,a.tZ)(u.Z,{title:"Home"}))}}}]);
-//# sourceMappingURL=component---src-pages-index-tsx-003116c8778e8ed7ee17.js.map
