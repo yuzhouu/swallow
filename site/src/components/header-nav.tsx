@@ -6,13 +6,7 @@ const Wrapper = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  padding: var(--spacing-0) var(--spacing-16);
-
-  @media (max-width: 66.8rem) {
-    padding: var(--spacing-0) var(--spacing-5);
-  }
+  height: 80px;
 `;
 
 const Brand = styled(Link)`
@@ -76,11 +70,10 @@ const HeaderNav = () => {
   );
 
   return (
-    <Wrapper>
+    <Wrapper className="container">
       <NavItems>
         <Brand to="/">{site.siteMetadata.title}</Brand>
         <NavLink to="/blog">Blog</NavLink>
-        <NavLink to="/about">About me</NavLink>
       </NavItems>
     </Wrapper>
   );

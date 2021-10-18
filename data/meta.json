@@ -3,7 +3,17 @@
     "title": "Ordinary Days",
     "siteUrl": "https://yuzhou.github.io/ordinary-days",
     "description": "read the source code and note then practice",
-    "githubRepo": "yuzhouu/ordinary-days"
+    "githubRepo": "yuzhouu/ordinary-days",
+    "footerLinks": [
+      {
+        "name": "github",
+        "link": "https://github.com/yuzhouu"
+      },
+      {
+        "name": "rss",
+        "link": "/rss.xml"
+      }
+    ]
   },
   "author": {
     "name": "YuZhou",
