@@ -1,5 +1,6 @@
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
+import UnderlineH2 from './underline-h2';
 
 const Wrapper = styled.div`
   position: relative;
@@ -14,25 +15,6 @@ const Wrapper = styled.div`
     background: #f8f8fc;
     z-index: -1;
     clip-path: polygon(0% 0%, 100% 5%, 100% 90%, 0% 95%);
-  }
-
-  h2 {
-    font-size: var(--fontSize-4);
-    letter-spacing: 0.3px;
-    display: inline-block;
-    position: relative;
-
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -24px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      border-radius: 99999px;
-      background: #ffd53d;
-      transform: rotate(-1deg);
-    }
   }
 `;
 
@@ -133,7 +115,7 @@ const RecentlyPublished = () => {
   return (
     <Wrapper>
       <div className="bg"></div>
-      <h2>Recently Posts</h2>
+      <UnderlineH2>Recently Posts</UnderlineH2>
       <Posts>
         {allMdx.nodes.map(item => {
           return (
