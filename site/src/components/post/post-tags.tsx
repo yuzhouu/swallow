@@ -2,9 +2,11 @@ import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import { memo } from 'react';
 import slugify from 'slugify';
+import clsx from 'clsx';
 
 interface Props {
   tags: string[];
+  className?: string;
 }
 
 const TagList = styled.ul`
@@ -20,34 +22,32 @@ const TagList = styled.ul`
 
     & + li {
       margin-left: var(--spacing-2);
-
-      &::before {
-        content: '';
-        width: 1px;
-        height: 10px;
-        background: var(--color-border);
-        display: inline-block;
-        position: absolute;
-        top: 9px;
-        left: -4px;
-      }
     }
 
     a {
       display: inline-block;
-      padding: var(--spacing-0) var(--spacing-2);
+      padding: var(--spacing-2) var(--spacing-4);
+      border-radius: var(--spacing-2);
       text-decoration: none;
+      background: var(--color-primary-light);
+      color: var(--color-primary-dark);
+      line-height: 1;
+
+      &:hover {
+        color: #fff;
+        background: var(--color-primary);
+        transition: background 125ms ease, color 125ms ease;
+      }
     }
   }
 `;
 
-const PostTags = ({ tags }: Props) => {
+const PostTags = ({ tags, className = '' }: Props) => {
   if (!tags || tags.length === 0) {
     return null;
   }
   return (
-    <div className="d-flex">
-      Tags: &nbsp;
+    <div className={clsx('d-flex', className)}>
       <TagList>
         {tags
           .sort((a, b) => {

@@ -8,11 +8,10 @@ const Wrapper = styled.div`
 
   .bg {
     position: absolute;
-    width: 600px;
+    left: 150px;
+    right: 50px;
     height: 100%;
     background: #f8f8fc;
-    left: 50%;
-    transform: translateX(-50%);
     z-index: -1;
     clip-path: polygon(0% 0%, 100% 5%, 100% 90%, 0% 95%);
   }

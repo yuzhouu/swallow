@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import styled from '@emotion/styled';
 
-import Bio from '../../components/bio';
 import PostLayout from '../../components/post/post-layout';
 import Seo from '../../components/seo';
 import PostNav from '../../components/post/blog-post-nav';
@@ -17,6 +16,23 @@ const Wrapper = styled.div`
   padding: var(--spacing-10) var(--spacing-5);
   display: flex;
   justify-content: center;
+
+  header {
+    text-align: center;
+    padding: var(--spacing-8) 0 var(--spacing-12);
+
+    .post-date {
+      margin-bottom: var(--spacing-8);
+    }
+
+    h1 {
+      margin-bottom: var(--spacing-10);
+    }
+
+    .post-tags {
+      justify-content: space-around;
+    }
+  }
 
   article {
     /** override implicit min-width */
@@ -46,17 +62,14 @@ const BlogPostTemplate = ({ data }) => {
       <Wrapper>
         <article className="blog-post" itemScope itemType="http://schema.org/Article">
           <header>
+            <div className="post-date">{post.frontmatter.date}</div>
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <div>{post.frontmatter.date}</div>
-            <Bio />
+            <PostTags className="post-tags" tags={post.frontmatter.tags} />
           </header>
           <MDXProvider>
             <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
           </MDXProvider>
           <hr />
-          <footer>
-            <PostTags tags={post.frontmatter.tags} />
-          </footer>
 
           <PostNav postNav={post.postNav} />
         </article>
