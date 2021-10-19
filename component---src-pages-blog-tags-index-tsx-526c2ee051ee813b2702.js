@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkordinary_days=self.webpackChunkordinary_days||[]).push([[576],{9552:function(t,l,n){n.r(l);n(7294);var a=n(3471),e=n(1069),s=n(776),u=n(3431);l.default=function(t){return 0===t.data.allTag.nodes.map((function(t){return t.name})).length?(0,u.tZ)(a.Z,{full:!1},(0,u.tZ)(e.Z,{title:"All tags"}),(0,u.tZ)("p",null,"No Tags found. Add tags filed to post's frontmatter.")):(0,u.tZ)(a.Z,{full:!1},(0,u.tZ)(e.Z,{title:"All posts"}),(0,u.tZ)(s.Z,null))}}}]);
+//# sourceMappingURL=component---src-pages-blog-tags-index-tsx-526c2ee051ee813b2702.js.map

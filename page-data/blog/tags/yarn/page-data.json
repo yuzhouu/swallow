@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-pages-blog-tags-tag-name-tsx",
     "path": "/blog/tags/yarn/",
     "result": {"data":{"allMdx":{"nodes":[{"excerpt":"直接在 lerna.json 中声明 packages:  ... ，lerna bootstrap 时会为每个 repo 单独装依赖，在使用 react 时就可能遇到 invalid hook call warning 错误，原因排除错误的使用了 hooks…","slug":"monorepo-with-lerna-and-yarn","frontmatter":{"date":"February 14, 2021","title":"Monorepo with lerna and yarn","tags":["monorepo","lerna","yarn"]}}]}},"pageContext":{"id":"yarn","name":"yarn","__params":{"name":"yarn"}}},
-    "staticQueryHashes": ["2285153661","2931014940","3000541721","3159585216"]}
+    "staticQueryHashes": ["2931014940","3000541721","3159585216"]}
