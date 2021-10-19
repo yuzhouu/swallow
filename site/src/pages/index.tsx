@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-gap: var(--spacing-10);
+  padding: var(--spacing-24) 0;
 
   @media (max-width: 64rem) {
     grid-template-columns: 1fr;

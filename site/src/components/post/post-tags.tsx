@@ -15,6 +15,7 @@ const TagList = styled.ul`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: calc(-1 * var(--spacing-4));
 
   li {
     list-style: none;

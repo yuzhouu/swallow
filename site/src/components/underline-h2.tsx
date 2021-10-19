@@ -5,6 +5,7 @@ const UnderlineH2 = styled.h2`
   letter-spacing: 0.3px;
   display: inline-block;
   position: relative;
+  margin-bottom: var(--spacing-12);
 
   &::after {
     content: '';

@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import styled from '@emotion/styled';
 
 const Nav = styled.ul`
-  margin: var(--spacing-0);
+  margin: var(--spacing-12) var(--spacing-0) var(--spacing-0);
   padding: var(--spacing-0);
   display: flex;
   flex-wrap: wrap;

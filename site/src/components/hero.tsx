@@ -58,18 +58,12 @@ const Hero = () => {
       site {
         siteMetadata {
           githubRepo
-          author {
-            name
-            bio
-            link
-          }
         }
       }
     }
   `);
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata.author;
   const githubUsername = data.site.siteMetadata.githubRepo.split('/')[0];
 
   return (

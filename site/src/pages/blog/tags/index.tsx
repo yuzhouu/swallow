@@ -2,8 +2,8 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../../../components/layout';
 import Seo from '../../../components/seo';
-import Bio from '../../../components/bio';
 import PostTags from '../../../components/post/post-tags';
+import ExploreTags from '../../../components/explore-tags';
 
 const TagIndex = ({ data }) => {
   const tags = data.allTag.nodes.map(item => item.name);
@@ -12,7 +12,6 @@ const TagIndex = ({ data }) => {
     return (
       <Layout full={false}>
         <Seo title="All tags" />
-        <Bio />
         <p>No Tags found. Add tags filed to post's frontmatter.</p>
       </Layout>
     );
@@ -21,8 +20,7 @@ const TagIndex = ({ data }) => {
   return (
     <Layout full={false}>
       <Seo title="All posts" />
-      <Bio />
-      <PostTags tags={tags} />
+      <ExploreTags />
     </Layout>
   );
 };

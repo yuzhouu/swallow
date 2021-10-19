@@ -106,7 +106,7 @@ const plugins = [
       background_color: `#ffffff`,
       theme_color: `#25c19f`,
       display: `minimal-ui`,
-      icon: `../data/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      icon: `../data/images/favicon.png`, // This path is relative to the root of the site.
     },
   },
   `gatsby-plugin-react-helmet`,

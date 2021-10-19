@@ -14,7 +14,6 @@ const BlogIndex = ({ data, params }: PageProps & { data: any }) => {
     return (
       <Layout full={false}>
         <Seo title={`Posts tagged with ${curTag}`} />
-        <Bio />
         <p>No blog posts tagged with {curTag} found. Add tag to post's tags frontmatter.</p>
       </Layout>
     );
@@ -23,7 +22,6 @@ const BlogIndex = ({ data, params }: PageProps & { data: any }) => {
   return (
     <Layout full={false}>
       <Seo title={`Posts tagged with ${curTag}`} />
-      <Bio />
       <section>
         <h3>
           {posts.length} posts tagged with 『{curTag}』

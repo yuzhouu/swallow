@@ -4,7 +4,6 @@ import UnderlineH2 from './underline-h2';
 
 const Wrapper = styled.div`
   position: relative;
-  padding: var(--spacing-24) 0;
 
   .bg {
     position: absolute;

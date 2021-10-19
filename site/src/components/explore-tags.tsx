@@ -5,8 +5,6 @@ import PostTags from './post/post-tags';
 
 const Wrapper = styled.div`
   position: relative;
-  padding: var(--spacing-24) 0;
-  max-width: 900px;
 
   .tags-container {
     padding: var(--spacing-4) 0 var(--spacing-3);

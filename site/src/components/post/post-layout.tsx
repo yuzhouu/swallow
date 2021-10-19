@@ -9,7 +9,7 @@ const GlobalWrapper = styled.div`
   min-height: 100vh;
   max-width: var(--maxWidth-wrapper);
 
-  .post-main {
+  /* .post-main {
     max-width: var(--maxWidth-post);
     padding: var(--spacing-10) var(--spacing-5);
     margin: var(--spacing-0) auto;
@@ -17,14 +17,14 @@ const GlobalWrapper = styled.div`
     @media (min-width: 48rem) {
       min-width: var(--maxWidth-post);
     }
-  }
+  } */
 `;
 
 const Layout = ({ children }) => {
   return (
     <GlobalWrapper className="global-wrapper">
       <HeaderNav />
-      <main className="post-main">{children}</main>
+      <main className="post-main container">{children}</main>
       <Footer />
     </GlobalWrapper>
   );

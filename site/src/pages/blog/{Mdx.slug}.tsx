@@ -27,6 +27,8 @@ const Wrapper = styled.div`
 
     h1 {
       margin-bottom: var(--spacing-10);
+      font-size: var(--fontSize-6);
+      line-height: var(--lineHeight-normal);
     }
 
     .post-tags {
@@ -69,7 +71,6 @@ const BlogPostTemplate = ({ data }) => {
           <MDXProvider>
             <MDXRenderer itemProp="articleBody">{post.body}</MDXRenderer>
           </MDXProvider>
-          <hr />
 
           <PostNav postNav={post.postNav} />
         </article>
