@@ -8,8 +8,8 @@ const Wrapper = styled.div`
 
   .bg {
     position: absolute;
-    left: 150px;
-    right: 50px;
+    left: 15%;
+    right: 10%;
     height: 100%;
     background: #f8f8fc;
     z-index: -1;
