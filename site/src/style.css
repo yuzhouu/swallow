@@ -318,7 +318,7 @@ a:focus {
   padding: var(--spacing-0) var(--spacing-16);
 }
 
-@media (max-width: 66.8rem) {
+@media (max-width: 40rem) {
   .container {
     padding: var(--spacing-0) var(--spacing-5);
   }

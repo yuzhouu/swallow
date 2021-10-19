@@ -5,7 +5,6 @@ import UnderlineH2 from './underline-h2';
 const Wrapper = styled.div`
   position: relative;
   padding: var(--spacing-24) 0;
-  max-width: 900px;
 
   .bg {
     position: absolute;
@@ -20,11 +19,18 @@ const Wrapper = styled.div`
 
 const Posts = styled.div`
   margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--spacing-10);
-  padding: var(--fontSize-3) 0;
+  padding: var(--spacing-4) 0 var(--spacing-3);
+
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 96rem) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
   a {
     display: block;
@@ -58,6 +64,7 @@ const Posts = styled.div`
     padding: var(--spacing-8) var(--spacing-6);
     position: relative;
     overflow: hidden;
+    height: 88px;
 
     .circle-1 {
       position: absolute;

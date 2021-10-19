@@ -19,10 +19,8 @@ const TagList = styled.ul`
   li {
     list-style: none;
     position: relative;
-
-    & + li {
-      margin-left: var(--spacing-2);
-    }
+    margin-right: var(--spacing-2);
+    margin-bottom: var(--spacing-4);
 
     a {
       display: inline-block;
