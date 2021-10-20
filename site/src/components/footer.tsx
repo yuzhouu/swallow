@@ -81,10 +81,6 @@ const Footer = () => {
             author {
               name
               link
-              socialLinks {
-                name
-                link
-              }
             }
           }
         }

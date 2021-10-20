@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { graphql, Link, PageProps } from 'gatsby';
 
-import Bio from '../../../components/bio';
 import Layout from '../../../components/layout';
 import Seo from '../../../components/seo';
 import PostList from '../../../components/post/post-list';

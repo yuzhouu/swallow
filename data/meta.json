@@ -7,7 +7,7 @@
     "footerLinks": [
       {
         "name": "github",
-        "link": "https://github.com/yuzhouu"
+        "link": "https://github.com/yuzhouu/ordinary-days"
       },
       {
         "name": "rss",
@@ -18,17 +18,7 @@
   "author": {
     "name": "YuZhou",
     "bio": "细雨鱼儿出，微风燕子斜",
-    "link": "https://github.com/yuzhouu",
-    "socialLinks": [
-      {
-        "name": "Github",
-        "link": "https://github.com/yuzhouu"
-      },
-      {
-        "name": "Blog",
-        "link": "/blog"
-      }
-    ]
+    "link": "https://github.com/yuzhouu"
   },
   "pathPrefix": "ordinary-days"
 }
