@@ -2,7 +2,7 @@
   "site": {
     "title": "Ordinary Days",
     "siteUrl": "https://yuzhou.github.io/ordinary-days",
-    "description": "read the source code and note then practice",
+    "description": "Blog模版，github action自动生成blog，无需了解前端知识",
     "githubRepo": "yuzhouu/ordinary-days",
     "footerLinks": [
       {
@@ -17,7 +17,6 @@
   },
   "author": {
     "name": "YuZhou",
-    "bio": "细雨鱼儿出，微风燕子斜",
     "link": "https://github.com/yuzhouu"
   },
   "pathPrefix": "ordinary-days"

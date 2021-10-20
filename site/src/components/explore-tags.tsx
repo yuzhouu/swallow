@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import UnderlineH2 from './underline-h2';
 import PostTags from './post/post-tags';

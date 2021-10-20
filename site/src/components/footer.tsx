@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 import { IconBrandGithub, IconRss, IconHeart } from '@tabler/icons';
 
