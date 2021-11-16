@@ -50,6 +50,7 @@ const createSchemaCustomization = ({ actions, schema }) => {
       older: Mdx
     }
   `;
+
   createTypes([typeDefs, TagType]);
 };
 

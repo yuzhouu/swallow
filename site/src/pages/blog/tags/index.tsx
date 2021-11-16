@@ -18,7 +18,7 @@ const TagIndex = ({ data }) => {
 
   return (
     <Layout full={false}>
-      <Seo title="All posts" />
+      <Seo title="All tags" />
       <ExploreTags />
     </Layout>
   );
