@@ -74,6 +74,12 @@ date: 2021-11-16
 UA-XXXXXXX-X
 ```
 
+### UA 的获取
+
+google ua 可以去https://analytics.google.com/analytics/web申请，通过`设置>创建媒体资源>显示高级选项>创建 Universal Analytics 媒体资源`，可以获得 google UA。
+
+注意 ⚠️ga4 的 id 无法使用，请保证 id 的格式为 UA-XXXXXX-XX
+
 ## 如何写 blog
 
 文章会自动通过`data/blog`下的 markdown 生成，文件路径自动映射到网站 url， 例如`hello.md` 会自动映射到 `yourdomain.com/blog/hello`。
@@ -90,3 +96,11 @@ date: 2021-11-16
 
 你的markdown正文
 ```
+
+## 接入 blog 评论
+
+评论功能由 utterances 提供
+
+> A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
+
+utterances 会将对应的 issue 同步到网站的评论区。你需要到一下网址https://utteranc.es/，给utterances授予你的blog repo 的访问权限，同时注意正确填写了/data/meta.json 中的`githubRepo`字段。
