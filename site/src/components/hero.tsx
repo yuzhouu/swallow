@@ -11,8 +11,8 @@ try {
 
 const Avatar = styled.img`
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
