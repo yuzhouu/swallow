@@ -14,7 +14,7 @@
         "link": "/rss.xml"
       }
     ],
-    "enableComment": false
+    "enableComment": true
   },
   "author": {
     "name": "YuZhou",
