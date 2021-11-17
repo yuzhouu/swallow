@@ -20,5 +20,11 @@
     "name": "YuZhou",
     "link": "https://github.com/yuzhouu"
   },
-  "pathPrefix": "ordinary-days"
+  "pathPrefix": "ordinary-days",
+  "docs": {
+    "hey": "你好呀! 我是 Yuzhou",
+    "title": "一个不知名星空摄影师，developer",
+    "about": "Welcome! It's great to have you here. I'm curious about the things under the nut, and I write some thing about javascript and golang.",
+    "blogSlogan": "细雨鱼儿出，微风燕子斜"
+  }
 }

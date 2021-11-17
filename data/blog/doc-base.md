@@ -4,13 +4,13 @@ tags: [doc]
 date: 2021-11-16
 ---
 
-小而美的 blog 框架，用户只用在初期进行基础配置，以后只需在写 markdown 文件，推送到 github，则自动化部署到 GitHub page。
+小而美的 blog 框架，用户只用在初期进行基础配置，以后只需要写 markdown 文件，推送到 github，blog 会自动部署到 GitHub page。
 
 ## 项目愿景
 
 使会基础 git 操作和 markdown 语法的人，无需编程知识，也可以轻松搭建精美的 blog。
 
-## 前置需求
+## 前置要求
 
 1. 首先 fork https://github.com/yuzhouu/ordinary-days 该仓库，然后去 仓库设置>pages>source 中将 Branch 切换为 gh-pages 点击 save.
 2. 点击 actions Tab, 打开 GitHub workflow，项目需要 workflows 去自动化部署到 github page ![](../images/github-action.jpg)
@@ -75,8 +75,24 @@ date: 2021-11-16
   // - 例如你的仓库名称为xx，则pathPrefix 必须为 xx;
   // - 其他特殊情况：若你的仓库名为xx.github.io, pathPrefix 为 /
   pathPrefix: "ordinary-days",
+
+  // 页面文案配置
+  docs: {
+    // 首页头部文案
+    hey: "你好呀! 我是 Yuzhou",
+    title: "一个不知名星空摄影师，developer",
+    about: "Welcome! It's great to have you here. I'm curious about the things under the nut, and I write some thing about javascript and golang.",
+
+    // 博客页头部文案
+    blogSlogan: "细雨鱼儿出，微风燕子斜",
+  },
 }
 ```
+
+### 配置位置详解
+
+![](../images/doc-index.jpg)
+![](../images/doc-blog.jpg)
 
 ## 写你的第一篇 blog
 
@@ -94,6 +110,18 @@ date: 2021-11-16
 
 你的markdown正文
 ```
+
+## avatar 头像设置
+
+![](../images/avatar-example.jpg)
+
+### 基础设置
+
+当你正确设置了 meta.json 中的 githubRepo 字段，框架会自动拉取你的 github 头像做完 blog 头像
+
+### 进阶设置
+
+在`/data/images`文件夹下放一张 avatar.png 图片，该图会自动覆盖 github 头像成为你的 blog 头像
 
 ## 部署
 

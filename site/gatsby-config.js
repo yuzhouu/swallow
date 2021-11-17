@@ -137,6 +137,7 @@ module.exports = {
   siteMetadata: {
     ...meta.site,
     author: meta.author,
+    docs: meta.docs,
   },
   pathPrefix: meta.pathPrefix || '',
   plugins,

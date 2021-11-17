@@ -1,9 +1,10 @@
-import UnderlineH2 from '../underline-h2';
+import { useStaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
+import UnderlineH2 from '../underline-h2';
 
 const Wrapper = styled.div`
   position: relative;
-  padding: var(--spacing-8);
+  padding: var(--spacing-12) var(--spacing-8);
   min-height: 300px;
 
   p {
@@ -39,10 +40,22 @@ const Wrapper = styled.div`
 `;
 
 const PostListHero = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          docs {
+            blogSlogan
+          }
+        }
+      }
+    }
+  `);
+
   return (
     <Wrapper>
       <UnderlineH2>Blog</UnderlineH2>
-      <p>细雨鱼儿出，微风燕子斜</p>
+      <p>{data.site.siteMetadata.docs.blogSlogan}</p>
       <svg className="post-hero-bg" viewBox="0 0 1600 600" width="100%" height="200">
         <g className="swallow">
           <path

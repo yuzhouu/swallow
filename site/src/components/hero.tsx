@@ -58,6 +58,11 @@ const Hero = () => {
       site {
         siteMetadata {
           githubRepo
+          docs {
+            hey
+            title
+            about
+          }
         }
       }
     }
@@ -65,16 +70,14 @@ const Hero = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const githubUsername = data.site.siteMetadata.githubRepo.split('/')[0];
+  const { hey, title, about } = data.site.siteMetadata.docs;
 
   return (
     <HeroWrapper>
       <div className="left">
-        <h1 className="hero__hey">你好呀! 我是 Yuzhou</h1>
-        <h2 className="hero__about-title">一个不知名星空摄影师，developer</h2>
-        <p className="hero__about">
-          Welcome! It's great to have you here. I'm curious about the things under the nut, and I
-          write some post about javascript and golang.
-        </p>
+        <h1 className="hero__hey">{hey}</h1>
+        <h2 className="hero__about-title">{title}</h2>
+        <p className="hero__about">{about}</p>
         <Link className="btn-link" to="/blog">
           Blog
         </Link>
