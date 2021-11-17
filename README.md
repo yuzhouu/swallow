@@ -1,26 +1,24 @@
-# Ordinary Days
+# Swallow
 
-[![Deploy to github.io](https://github.com/yuzhouu/yuzhouu.github.io/actions/workflows/auto-publish.js.yml/badge.svg)](https://github.com/yuzhouu/yuzhouu.github.io/actions/workflows/auto-publish.js.yml)
+[![Deploy to github.io](https://github.com/yuzhouu/swallow/actions/workflows/auto-publish.js.yml/badge.svg)](https://github.com/yuzhouu/swallow/actions/workflows/auto-publish.js.yml)
 
-## USAGES
-
-the article, config or other asset should be placed under `data/` folder, and the `site` place the role of generator.
-
-the goal of this project is help people who is not familiar with frontend deploy fantasy blog.
+**ease use blog template.**
 
 #### the things you don't need
+
 - know any things about gatsby, node, typescript
 - install node dependencies
 
 #### the things you do
+
 - wirte markdown under the `/data` folder
 - push to github
 
 after you push to github, project will **automatically build and deploy** to xxx.github.io.
 
-## Google Analytics
+## docs
 
-write your track id to `/data/google-tracking-id`, the google analytics will automatically start.
+[yuzhouu.github.io/swallow/](yuzhouu.github.io/swallow/)
 
 ## LICENSE
 

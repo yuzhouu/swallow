@@ -12,7 +12,7 @@ date: 2021-11-16
 
 ## 前置要求
 
-1. 首先 fork https://github.com/yuzhouu/ordinary-days 该仓库，然后去 仓库设置>pages>source 中将 Branch 切换为 gh-pages 点击 save.
+1. 首先 fork https://github.com/yuzhouu/swallow 该仓库，然后去 仓库设置>pages>source 中将 Branch 切换为 gh-pages 点击 save.
 2. 点击 actions Tab, 打开 GitHub workflow，项目需要 workflows 去自动化部署到 github page ![](../images/github-action.jpg)
 3. 可选步骤: 在设置中修改你的 repo 名称，建议为`你的用户名.github.io`，这样你可以通过`https://你的用户名.github.io`访问到你的 blog
 
@@ -39,19 +39,19 @@ date: 2021-11-16
     title: "Ordinary Days",
 
     // 网站的url
-    siteUrl: "https://yuzhou.github.io/ordinary-days",
+    siteUrl: "https://yuzhou.github.io/swallow",
 
     // 用于rss 和 网站seo的描述
     description: "Blog模版，github action自动生成blog，无需了解前端知识",
 
     // github 用户名/仓库名
-    githubRepo: "yuzhouu/ordinary-days",
+    githubRepo: "yuzhouu/swallow",
 
     // 网站底部链接 name用于匹配图标
     footerLinks: [
       {
         name: "github",
-        link: "https://github.com/yuzhouu/ordinary-days",
+        link: "https://github.com/yuzhouu/swallow",
       },
       {
         name: "rss",
@@ -74,7 +74,7 @@ date: 2021-11-16
   // GitHub pages 前缀
   // - 例如你的仓库名称为xx，则pathPrefix 必须为 xx;
   // - 其他特殊情况：若你的仓库名为xx.github.io, pathPrefix 为 /
-  pathPrefix: "ordinary-days",
+  pathPrefix: "swallow",
 
   // 页面文案配置
   docs: {

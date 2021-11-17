@@ -129,7 +129,7 @@ const Footer = () => {
             <a href={site.siteMetadata.author.link}>{site.siteMetadata.author.name}</a>
           </span>
           <PowerBy className="powered-by">
-            Powered by <a href="https://github.com/yuzhouu/ordinary-days">Ordinary Days</a>
+            Powered by <a href="https://github.com/yuzhouu/swallow">Swallow</a>
           </PowerBy>
         </div>
       </div>

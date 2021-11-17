@@ -1,13 +1,13 @@
 {
   "site": {
     "title": "Ordinary Days",
-    "siteUrl": "https://yuzhou.github.io/ordinary-days",
+    "siteUrl": "https://yuzhou.github.io/swallow",
     "description": "Blog模版，github action自动生成blog，无需了解前端知识",
-    "githubRepo": "yuzhouu/ordinary-days",
+    "githubRepo": "yuzhouu/swallow",
     "footerLinks": [
       {
         "name": "github",
-        "link": "https://github.com/yuzhouu/ordinary-days"
+        "link": "https://github.com/yuzhouu/swallow"
       },
       {
         "name": "rss",
@@ -20,7 +20,7 @@
     "name": "YuZhou",
     "link": "https://github.com/yuzhouu"
   },
-  "pathPrefix": "ordinary-days",
+  "pathPrefix": "swallow",
   "docs": {
     "hey": "你好呀! 我是 Yuzhou",
     "title": "一个不知名星空摄影师，developer",

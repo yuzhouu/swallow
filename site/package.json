@@ -1,5 +1,5 @@
 {
-  "name": "ordinary-days",
+  "name": "swallow",
   "private": true,
   "description": "site generator",
   "version": "0.1.0",
@@ -39,7 +39,7 @@
     "gh-pages": "^3.2.3",
     "prettier": "2.3.2"
   },
-  "homepage": "https://github.com/yuzhouu/ordinary-days#readme",
+  "homepage": "https://github.com/yuzhouu/swallow#readme",
   "keywords": [
     "gatsby",
     "site generator"
@@ -48,7 +48,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuzhouu/ordinary-days.git"
+    "url": "git+https://github.com/yuzhouu/swallow.git"
   },
   "scripts": {
     "build": "gatsby build --prefix-paths",
