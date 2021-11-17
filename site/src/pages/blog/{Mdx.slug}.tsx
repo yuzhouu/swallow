@@ -78,7 +78,9 @@ const BlogPostTemplate = ({ data }) => {
           <TOC toc={post.tableOfContents.items} />
         </div>
       </Wrapper>
-      <PostComment repo={data.site.siteMetadata.githubRepo} />
+      {data.site.siteMetadata.enableComment && (
+        <PostComment repo={data.site.siteMetadata.githubRepo} />
+      )}
     </PostLayout>
   );
 };
@@ -116,6 +118,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         githubRepo
+        enableComment
       }
     }
   }

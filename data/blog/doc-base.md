@@ -30,7 +30,7 @@ date: 2021-11-16
 
 ## 修改 data/meta.json
 
-这里是项目的基础配置，请根据注释，修改`data/meta.json`中的配置项
+这是项目的基础配置，请根据注释，修改`data/meta.json`中的配置项
 
 ```json5
 {
@@ -58,6 +58,9 @@ date: 2021-11-16
         link: "/rss.xml",
       },
     ],
+
+    // 启用issue comment，需要为repo 注册utterances，参考 /data/blog/doc-advanced.md
+    enableComment: true,
   },
 
   // 作者相关信息

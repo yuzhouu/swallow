@@ -22,8 +22,10 @@ google ua 可以去https://analytics.google.com/analytics/web申请，通过`设
 
 ## 接入 blog 评论
 
-评论功能由 utterances 提供
+评论功能由 utterances 提供，utterances 会将对应的 issue 同步到网站的评论区。
 
 > A lightweight comments widget built on GitHub issues. Use GitHub issues for blog comments, wiki pages and more!
 
-utterances 会将对应的 issue 同步到网站的评论区。你需要到一下网址https://utteranc.es/，给utterances授予你的blog repo 的访问权限，同时注意正确填写了/data/meta.json 中的`githubRepo`字段。
+1. 正确填写了/data/meta.json 中的`githubRepo`字段，格式为你的 `github用户名/仓库名称`
+2. 将/data/meta.json 中的`enableComment`字段设置为 true
+3. 到https://utteranc.es/，根据utterances的文档，给utterances授予你的blog repo 的访问权限

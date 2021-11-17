@@ -13,7 +13,8 @@
         "name": "rss",
         "link": "/rss.xml"
       }
-    ]
+    ],
+    "enableComment": false
   },
   "author": {
     "name": "YuZhou",
