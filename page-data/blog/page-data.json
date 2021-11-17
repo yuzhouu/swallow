@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-blog-index-tsx",
     "path": "/blog/",
-    "result": {"data":{"allMdx":{"nodes":[{"excerpt":"项目愿景 使会基础 git 操作和 markdown 语法的人， 目录结构 meta.json 接入 google 统计 在 data/ 目录下添加 google-tracking-id 文件，写入你的 UA\n例子 UA 的获取 google ua 可以去 https…","slug":"doc","frontmatter":{"date":"November 16, 2021","title":"使用说明","tags":["doc"]}}]}},"pageContext":{}},
-    "staticQueryHashes": ["2719914062","3000541721","3159585216"]}
+    "result": {"data":{"allMdx":{"nodes":[{"excerpt":"接入 google 统计 在 data/ 目录下添加 google-tracking-id 文件，写入你的 UA 例子 UA 的获取 ua 可以去 https://analytics.google.com/analytics/web…","slug":"doc-advanced","frontmatter":{"date":"November 17, 2021","title":"高级设置","tags":["doc"]}},{"excerpt":"小而美的 blog 框架，用户只用在初期进行基础配置，以后只需要写 markdown 文件，推送到 github，blog 会自动部署到 GitHub page。 项目愿景 使会基础 git 操作和 markdown 语法的人，无需编程知识，也可以轻松搭建精美的 blog…","slug":"doc-base","frontmatter":{"date":"November 16, 2021","title":"基础设置","tags":["doc"]}}]}},"pageContext":{}},
+    "staticQueryHashes": ["2719914062","3000541721","3026046395","3159585216"]}
