@@ -89,7 +89,7 @@ date: 2021-11-16
 }
 ```
 
-### 配置位置详解
+### 页面文案位置详解
 
 ![](../images/doc-index.jpg)
 ![](../images/doc-blog.jpg)
