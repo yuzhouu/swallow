@@ -18,7 +18,7 @@ after you push to github, project will **automatically build and deploy** to xxx
 
 ## docs
 
-[yuzhouu.github.io/swallow/](yuzhouu.github.io/swallow/)
+[yuzhouu.github.io/swallow/](https://yuzhouu.github.io/swallow/)
 
 ## LICENSE
 
