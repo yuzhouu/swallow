@@ -4,6 +4,12 @@
 
 **ease use blog template.**
 
+## preview
+
+![](./preview.jpg)
+
+## ease && beautiful && github workflows powered
+
 #### the things you don't need
 
 - know any things about gatsby, node, typescript

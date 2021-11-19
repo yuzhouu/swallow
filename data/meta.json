@@ -1,8 +1,8 @@
 {
   "site": {
-    "title": "Ordinary Days",
+    "title": "Swallow",
     "siteUrl": "https://yuzhou.github.io/swallow",
-    "description": "Blog模版，github action自动生成blog，无需了解前端知识",
+    "description": "Blog template，github action generated blog，no need konw anything about js",
     "githubRepo": "yuzhouu/swallow",
     "footerLinks": [
       {

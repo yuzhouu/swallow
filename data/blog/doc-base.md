@@ -36,7 +36,7 @@ date: 2021-11-16
 {
   site: {
     // 网站名称
-    title: "Ordinary Days",
+    title: "Swallow",
 
     // 网站的url
     siteUrl: "https://yuzhou.github.io/swallow",
